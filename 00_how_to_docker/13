@@ -1,1 +1,6 @@
+# Print the environment variables of the spawning-pool container in one command,
+# to be sure that you have configured your container properly.
+
+# docker exec -- 	Run a command in a running container
+
 docker exec spawning-pool env

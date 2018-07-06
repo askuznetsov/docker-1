@@ -1,1 +1,5 @@
+# List all the Docker volumes created on the machine. Remember. VOLUMES.
+
+# docker volume ls -- List volumes
+
 docker volume ls

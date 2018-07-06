@@ -1,1 +1,5 @@
+# Get the hello-world container from the Docker Hub, where it’s available.
+
+# Pull an image or a repository from a registry
+
 docker pull hello-world

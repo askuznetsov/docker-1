@@ -1,1 +1,7 @@
+# Get the internal IP address of the overlord container
+# without starting its shell and in one command.
+
+# docker inspect
+# Return low-level information on Docker objects
+
 docker inspect overlord | grep IPAddress | sed 1d | sed 2d | awk -F '"' '{print $4}'
