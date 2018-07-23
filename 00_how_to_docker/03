@@ -12,4 +12,4 @@
 # to the Docker Engine running on this virtual
 # machine, run: docker-machine env Char
 
-eval "$(docker-machine env Char)"
+eval $(docker-machine env Char)
