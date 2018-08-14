@@ -1,3 +1,5 @@
 # Display all the tasks of the marines service.
+#
+# ps — List the tasks of one or more services.
 
-docker service logs marines
+docker service ps marines
