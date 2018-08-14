@@ -6,17 +6,22 @@
 # so be sure to create your Dockerfile with the right options.
 # Your program should get the sources when it builds,
 # they cannot be in your repository.
-
+#
+# How to run it?
+# docker run --rm -p 9987:9987/udp -p 10011:10011 -p 30033:30033 ex01
+#
 # Мы указываем инструкцию EXPOSE, которая говорит Docker,
 # что приложение в контейнере должно использовать определенный порт в контейнере.
 # По соображениям безопасности Docker не открывает порт автоматически, но ожидает,
 # когда это сделает пользователь в команде docker run.
 # Вы можете указать множество инструкций EXPOSE для указания,
-# какие порты должны быть открыты. Также инструкция EXPOSE полезна для проброса портов между контейнерами.
+# какие порты должны быть открыты. Также инструкция EXPOSE полезна для проброса портов между 
+# контейнерами.
 
 # Инструкция ENV устанавливает переменные окружения в образе.
 
 FROM debian
+MAINTAINER okuznets <okuznets@student.unit.ua>
 RUN apt-get update
 RUN apt-get upgrade -y
 RUN apt-get install curl -y
