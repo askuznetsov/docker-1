@@ -3,4 +3,4 @@
 # they can be whatever you want. This service will be on the overmind network.
 # --env , -e		Set environment variables
 
-docker service create --name orbital-command --network overmind -e RABBITMQ_DEFAULT_USER=yasuo -e RABBITMQ_DEFAULT_PASS=hasagi rabbitmq 
+docker service create --name orbital-command --network overmind -e RABBITMQ_DEFAULT_USER=root -e RABBITMQ_DEFAULT_PASS=root rabbitmq 
