@@ -6,4 +6,4 @@
 # a database named zerglings, and that the container
 # itself is named spawning-pool.
 
-docker run -d --restart on-failure --mount type=volume,source=hatchery,destination=/etc/mysql --env MYSQL_DATABASE="zerglings" --env MYSQL_ROOT_PASSWORD=Kerrigan --name spawning-pool mysql:5.7
+docker run -d --restart on-failure:10 --mount type=volume,source=hatchery,destination=/etc/mysql --env MYSQL_DATABASE="zerglings" --env MYSQL_ROOT_PASSWORD=Kerrigan --name spawning-pool mysql:5.7
