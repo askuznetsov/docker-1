@@ -7,4 +7,6 @@
 # --rm						Automatically remove the container when it exits
 # -ti  параметры буквально значат tty interactive — интерактивный терминал.
 
-docker run --rm -ti alpine
+# Usually, an Alpine Linux image doesn't contain bash, instead you can use /bin/ash, /bin/sh, ash or only sh.
+
+docker run --rm -ti alpine /bin/sh
