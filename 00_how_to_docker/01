@@ -11,4 +11,4 @@
 
 #  --driver, -d "none"
 
-docker-machine create -d virtualbox Char
+docker-machine create --driver virtualbox Char
