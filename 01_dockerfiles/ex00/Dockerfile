@@ -2,5 +2,8 @@
 # vim or emacs, that will launch along with your container.
 
 FROM alpine
-RUN apk update && apk add vim
+MAINTAINER okuznets <okuznets@student.unit.ua>
+RUN apk update && \
+    apk upgrade && \
+    apk add vim
 CMD vim
