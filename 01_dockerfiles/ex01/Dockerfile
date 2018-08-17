@@ -15,7 +15,7 @@
 # По соображениям безопасности Docker не открывает порт автоматически, но ожидает,
 # когда это сделает пользователь в команде docker run.
 # Вы можете указать множество инструкций EXPOSE для указания,
-# какие порты должны быть открыты. Также инструкция EXPOSE полезна для проброса портов между 
+# какие порты должны быть открыты. Также инструкция EXPOSE полезна для проброса портов между
 # контейнерами.
 
 # Инструкция ENV устанавливает переменные окружения в образе.
@@ -33,4 +33,4 @@ EXPOSE 9987/udp
 EXPOSE 10011
 EXPOSE 30033
 ENV TS3SERVER_LICENSE accept
-ENTRYPOINT sh ./teamspeak3-server_linus_amd64/ts3server_minimal_runscript.sh
+ENTRYPOINT sh ./teamspeak3-server_linux_amd64/ts3server_minimal_runscript.sh
