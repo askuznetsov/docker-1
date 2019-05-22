@@ -1,0 +1,10 @@
+# Launch a shell from an alpine container,
+# and make sure that you can interact directly with
+# the container via your terminal,
+# and that the container deletes itself
+# once the shell’s execution is done.
+
+# --rm						Automatically remove the container when it exits
+# -ti  параметры буквально значат tty interactive — интерактивный терминал.
+
+docker run --rm -ti alpine
