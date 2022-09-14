@@ -3,4 +3,26 @@
 # they can be whatever you want. This service will be on the overmind network.
 # --env , -e		Set environment variables
 
+# Explanation
+# -----------------------------------------------------------------------------------------------
+# library/rabbitmq | Docker Hub:
+#
+# Setting default user and password
+# If you wish to change the default username and password of guest / guest, you can do so with
+
+# the RABBITMQ_DEFAULT_USER and RABBITMQ_DEFAULT_PASS environmental variables:
+#
+# $ docker run -d --hostname my-rabbit --name some-rabbit -e RABBITMQ_DEFAULT_USER=user -e
+#
+# RABBITMQ_DEFAULT_PASS=password rabbitmq:3-management
+#
+# docker service create --help:
+#
+# -d, --detach — Exit immediately instead of waiting for the service to converge (default true).
+#
+# If I didn't use -d flag, I get the following output:
+# Since --detach=false was not specified, tasks will be created in the background.
+# In a future release, --detach=false will become the default.
+# -----------------------------------------------------------------------------------------------
+
 docker service create --name orbital-command --network overmind -e RABBITMQ_DEFAULT_USER=root -e RABBITMQ_DEFAULT_PASS=root rabbitmq 
